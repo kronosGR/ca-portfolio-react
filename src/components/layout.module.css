@@ -1,0 +1,11 @@
+.layout {
+  height: 100vh;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    var(--bg-color-black),
+    var(--bg-color-blue),
+    var(--bg-color-blue),
+    var(--bg-color-black)
+  );
+}

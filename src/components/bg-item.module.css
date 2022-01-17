@@ -1,0 +1,29 @@
+.bg_item {
+  color: var(--color-white-low-opacity);
+  font-weight: bold;
+}
+
+.size1{
+  font-size: 1rem;
+}
+
+.size2{
+  font-size: 2rem;
+}
+
+.size3{
+  font-size: 3rem;
+}
+
+.animation_heart {
+  animation: heart_scale 3s linear infinite alternate;
+}
+
+@keyframes heart_scale {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
