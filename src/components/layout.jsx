@@ -6,7 +6,7 @@ const Layout = (props) => {
   return (
     <div className={classes.layout}>
       {props.children}
-      <BgItem title="CSS" size="3"/>
+      <BgItem title="CSS" size="3" top="30" left="80"/>
     </div>
   );
 };

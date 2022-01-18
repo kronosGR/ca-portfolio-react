@@ -1,19 +1,10 @@
 .bg_item {
+  display: inline-block;
   color: var(--color-white-low-opacity);
   font-weight: bold;
+  position: relative;
 }
 
-.size1{
-  font-size: 1rem;
-}
-
-.size2{
-  font-size: 2rem;
-}
-
-.size3{
-  font-size: 3rem;
-}
 
 .animation_heart {
   animation: heart_scale 3s linear infinite alternate;
