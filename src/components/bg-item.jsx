@@ -5,9 +5,8 @@ const BgItem = (props) => {
   const divRef = useRef(null);
 
   useEffect(() => {
-    console.log(props)
-    divRef.current.style.top = props.top +'%';
-    divRef.current.style.left = props.left + '%';
+    divRef.current.style.top = props.top +'vh';
+    divRef.current.style.left = props.left + 'vw';
     //console.log(divRef.current.getBoundingClientRect());
   }, []);
 

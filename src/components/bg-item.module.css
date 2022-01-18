@@ -2,7 +2,7 @@
   display: inline-block;
   color: var(--color-white-low-opacity);
   font-weight: bold;
-  position: relative;
+  position: absolute;
 }
 
 

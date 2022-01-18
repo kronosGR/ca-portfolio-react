@@ -1,12 +1,14 @@
 import React from 'react';
-import Layout from './components/layout';
+import LayoutFirst from './components/layout-first';
 
 const App = () => {
   return (
     <>
-      <Layout>
-        <h1> Lead Capture App </h1>
-      </Layout>
+      <LayoutFirst>
+        <h1>Hi, I am Georgios</h1>
+        <h2>... a Front-End Developer</h2>
+        <h3>...with passion for problem solving and creation</h3>
+      </LayoutFirst>
     </>
   );
 };
