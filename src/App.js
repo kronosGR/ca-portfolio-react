@@ -3,8 +3,15 @@ import LayoutFirst from './components/layout-first';
 import LayoutSecond from './components/layout-second';
 import Header from './components/header';
 import Title from './components/title';
+import { projects } from './data/projects';
+import Project from './components/project';
 
 const App = () => {
+  const projectsEls = projects.map(project => {
+    return <Project key={project.id} project={project}/>
+  })
+
+  console.log(projectsEls)
   return (
     <>
       <LayoutFirst>
@@ -15,6 +22,7 @@ const App = () => {
       <LayoutSecond>
         <Header />
         <Title title="Projects"/>
+        {projectsEls}
       </LayoutSecond>
     </>
   );

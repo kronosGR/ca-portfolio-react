@@ -10,12 +10,16 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   min-width: 460px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   overflow-x: hidden;
-  padding: 0;
   scroll-behavior: smooth;
 }
 
