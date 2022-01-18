@@ -14,7 +14,7 @@ const Layout = (props) => {
   })
 
   return (
-    <div className={classes.layout}>
+    <div className={classes.layout} id="home">
       {props.children}
       {bgItems}
     </div>

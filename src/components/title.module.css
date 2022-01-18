@@ -1,0 +1,8 @@
+.title {
+  font-size: 2rem;
+  font-family: 'Playfair Display', sans-serif;
+  padding: 10px 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 100vw;
+}

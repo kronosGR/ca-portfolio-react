@@ -1,26 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
-:root{
-  --bg-color-black: #0F0F13;
-  --bg-color-blue: #242E50;
-  --color-white-low-opacity: rgba(255,255,255,0.05);
+:root {
+  --bg-color-black: #0f0f13;
+  --bg-color-blue: #242e50;
+  --color-white-low-opacity: rgba(255, 255, 255, 0.05);
 }
 
-html{
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 460px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
-  overflow: hidden;
+  overflow-x: hidden;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-
-.size1{
+.size1 {
   font-size: 1rem;
 }
 
-.size2{
+.size2 {
   font-size: 2rem;
 }
 
-.size3{
+.size3 {
   font-size: 3rem;
 }

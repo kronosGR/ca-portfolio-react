@@ -1,0 +1,15 @@
+.layout_second {
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    var(--bg-color-black),
+    var(--bg-color-blue),
+    var(--bg-color-blue),
+    var(--bg-color-black)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
