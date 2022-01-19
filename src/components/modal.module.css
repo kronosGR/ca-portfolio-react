@@ -4,6 +4,11 @@
   left: 0px;
   width: 100vw;
   height: 100vh;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .modal_img {
@@ -12,17 +17,17 @@
 
 .modal_btn_close {
   display: inline-block;
-  color: var(--bg-color-black);
-  position: absolute;
-  top: 30px;
-  right: 30px;
+  color: var(white);
+  margin: 30px auto;
+  text-align: center;
   font-size: 2rem;
   font-weight: bold;
   padding: 10px;
-  border: 2px solid var(--bg-color-black);
+  border: 2px solid white;
 }
 
 .modal_btn_close:hover {
-  background-color: var(--bg-color-black);
-  color: white;
+  background-color: black;
+  transform: scale(1.2);
+  cursor: pointer;
 }

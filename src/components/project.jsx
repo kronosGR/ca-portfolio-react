@@ -9,13 +9,6 @@ const Project = (props) => {
   const { project } = props;
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [yLocation, setYLocation] = useState(0);
-
-  const objectRef = useRef(null);
-
-  useEffect(() => {
-    setYLocation(Math.floor(objectRef.current.getBoundingClientRect().y));
-  }, []);
 
   function modalHandler() {
     setModalIsOpen(!modalIsOpen);
@@ -35,7 +28,7 @@ const Project = (props) => {
   });
 
   return (
-    <div className={classes.project} ref={objectRef}>
+    <div className={classes.project}>
       <div>
         <span className={classes.project_title}>{project.name}</span>
         <span className={classes.project_year}>{project.year}</span>
@@ -62,7 +55,6 @@ const Project = (props) => {
         isOpen={modalIsOpen}
         src={project.img}
         onClose={() => modalHandler()}
-        y={yLocation}
       />
     </div>
   );
