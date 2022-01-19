@@ -31,3 +31,9 @@
   height: 46px;
   margin: 10px 4px;
 }
+
+.project_btn_container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,23 @@
+.button{
+  color: white;
+  background-color: var(--bg-color-blue);
+  padding: 0 7px;
+  text-decoration: none;
+  border:3px solid var(--bg-color-blue);
+  font-size: 2rem;
+  display: flex;
+  margin-top: 10px;
+  box-shadow: 2px 2px 5px rgba(255,255,255,0.5);
+}
+
+.button:hover,
+.button:active{
+  background-color: inherit;
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+.button_img{
+  width: 32px;
+  margin: 7px;
+}

@@ -5,13 +5,13 @@ import Header from './components/header';
 import Title from './components/title';
 import { projects } from './data/projects';
 import Project from './components/project';
+import Button from './components/button';
 
 const App = () => {
   const projectsEls = projects.map(project => {
     return <Project key={project.id} project={project}/>
   })
-
-  console.log(projectsEls)
+ 
   return (
     <>
       <LayoutFirst>
@@ -23,6 +23,7 @@ const App = () => {
         <Header />
         <Title title="Projects"/>
         {projectsEls}
+        <Button text="All Projects" img="icons/github.svg" url="https://github.com/kronosGR?tab=repositories"/>
       </LayoutSecond>
     </>
   );
