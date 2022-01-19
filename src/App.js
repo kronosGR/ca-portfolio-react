@@ -6,6 +6,7 @@ import Title from './components/title';
 import { projects } from './data/projects';
 import Project from './components/project';
 import Button from './components/button';
+import Modal from './components/modal';
 
 const App = () => {
   const projectsEls = projects.map(project => {

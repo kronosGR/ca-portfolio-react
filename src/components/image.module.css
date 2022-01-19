@@ -1,3 +1,11 @@
 .thumb{
   width: 100%;
+  box-shadow: 4px 4px 5px var(--color-shadow);
+}
+
+.thumb:hover,
+.thumb:active{
+  box-shadow: none;
+  transform: translate(5px, 5px);
+  cursor: pointer;
 }

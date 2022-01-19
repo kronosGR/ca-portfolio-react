@@ -1,10 +1,26 @@
+import { useState, useRef, useEffect } from 'react';
 import Button from './button';
 import Image from './image';
+import Modal from './modal';
 
 import classes from './project.module.css';
 
 const Project = (props) => {
   const { project } = props;
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [yLocation, setYLocation] = useState(0);
+
+  const objectRef = useRef(null);
+
+  useEffect(() => {
+    setYLocation(Math.floor(objectRef.current.getBoundingClientRect().y));
+  }, []);
+
+  function modalHandler() {
+    setModalIsOpen(!modalIsOpen);
+    console.log('clicked');
+  }
 
   // plus information
   const plus = project.plus.split('\n').map((item, i) => {
@@ -19,7 +35,7 @@ const Project = (props) => {
   });
 
   return (
-    <div className={classes.project}>
+    <div className={classes.project} ref={objectRef}>
       <div>
         <span className={classes.project_title}>{project.name}</span>
         <span className={classes.project_year}>{project.year}</span>
@@ -34,14 +50,21 @@ const Project = (props) => {
         <Image
           alt={project.name}
           src={project.thumb}
-          src_img={project.img}          
+          src_img={project.img}
+          onClickHandler={modalHandler}
         />
       </div>
       <div className={classes.project_btn_container}>
-        <Button text="Source Code" img="icons/github.svg" url={project.source} />
-        <Button text="Visit" img="icons/visit.svg" url={project.url} />
+        <Button text='Source Code' img='icons/github.svg' url={project.source} />
+        <Button text='Visit' img='icons/visit.svg' url={project.url} />
       </div>
-    </div>     
+      <Modal
+        isOpen={modalIsOpen}
+        src={project.img}
+        onClose={() => modalHandler()}
+        y={yLocation}
+      />
+    </div>
   );
 };
 

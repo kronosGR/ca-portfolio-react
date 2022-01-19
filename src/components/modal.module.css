@@ -1,0 +1,28 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal_img {
+  width: 100%;
+}
+
+.modal_btn_close {
+  display: inline-block;
+  color: var(--bg-color-black);
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid var(--bg-color-black);
+}
+
+.modal_btn_close:hover {
+  background-color: var(--bg-color-black);
+  color: white;
+}
