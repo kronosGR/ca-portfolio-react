@@ -12,7 +12,6 @@ const Project = (props) => {
 
   function modalHandler() {
     setModalIsOpen(!modalIsOpen);
-    console.log('clicked');
   }
 
   // plus information

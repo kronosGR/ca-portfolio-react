@@ -1,0 +1,8 @@
+.layout_third {
+  color: white;
+  background-image: radial-gradient(ellipse at left top, var(--bg-color-blue), var(--bg-color-black));
+  background-position: top;
+  display: flex;
+  text-align: center;
+  padding-bottom: 50px;
+}

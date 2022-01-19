@@ -6,7 +6,7 @@ import Title from './components/title';
 import { projects } from './data/projects';
 import Project from './components/project';
 import Button from './components/button';
-import Modal from './components/modal';
+import LayoutThird from './components/layout-third';
 
 const App = () => {
   const projectsEls = projects.map(project => {
@@ -26,6 +26,9 @@ const App = () => {
         {projectsEls}
         <Button text="All Projects" img="icons/github.svg" url="https://github.com/kronosGR?tab=repositories"/>
       </LayoutSecond>
+      <LayoutThird>
+        <Title title="About"/>
+      </LayoutThird>
     </>
   );
 };
