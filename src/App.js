@@ -7,12 +7,14 @@ import { projects } from './data/projects';
 import Project from './components/project';
 import Button from './components/button';
 import LayoutThird from './components/layout-third';
+import PortfolioImage from './components/portfolio-image';
+import AboutText from './components/about-text';
 
 const App = () => {
-  const projectsEls = projects.map(project => {
-    return <Project key={project.id} project={project}/>
-  })
- 
+  const projectsEls = projects.map((project) => {
+    return <Project key={project.id} project={project} />;
+  });
+
   return (
     <>
       <LayoutFirst>
@@ -22,12 +24,18 @@ const App = () => {
       </LayoutFirst>
       <LayoutSecond>
         <Header />
-        <Title title="Projects"/>
+        <Title title='Projects' />
         {projectsEls}
-        <Button text="All Projects" img="icons/github.svg" url="https://github.com/kronosGR?tab=repositories"/>
+        <Button
+          text='All Projects'
+          img='icons/github.svg'
+          url='https://github.com/kronosGR?tab=repositories'
+        />
       </LayoutSecond>
       <LayoutThird>
-        <Title title="About"/>
+        <Title title='About' />
+        <PortfolioImage />
+        <AboutText />
       </LayoutThird>
     </>
   );

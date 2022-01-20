@@ -1,0 +1,12 @@
+.container{
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+}
+
+.portfolio_image{
+  width: 60vw;
+  height: 60vw;
+  object-fit: cover;
+  border-radius: 50%;
+}

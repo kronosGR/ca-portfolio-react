@@ -19,7 +19,7 @@ export const projects = [
     thumb: 'images/pet-paradise.png',
     img: 'images/full-pet-paradise.png',
     source: 'https://github.com/kronosGR/Georgios-Katsanakis-semester-project-2',
-    url: '',
+    url: 'http://petparadise.kronosgr.net/',
   },
   {
     id: 2,
