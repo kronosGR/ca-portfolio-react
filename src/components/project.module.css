@@ -10,6 +10,9 @@
   text-align: left;
 }
 
+.project_info {
+  width: 100%;
+}
 
 .project_title {
   font-size: 1.4rem;
@@ -22,18 +25,51 @@
   margin-left: 10px;
 }
 
-.project_plus{
+.project_plus {
   text-align: left;
 }
 
-.project_tech_img{
+.project_tech_img {
   width: auto;
   height: 46px;
   margin: 10px 4px;
 }
 
-.project_btn_container{
+.project_btn_container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.img_container {
+  margin: 20px auto 0 auto;
+  width: 90%;
+}
+
+@media screen and (min-width: 770px) {
+  .project {
+    flex-direction: row;
+  }
+
+  .img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project_btn_container > * {
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .project {
+    width: 80%;
+  }
+}
+
+
+@media screen and (min-width: 1360px) {
+  .project {
+    width: 70%;
+  }
 }

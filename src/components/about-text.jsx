@@ -1,7 +1,7 @@
 import classes from './about-text.module.css';
 
 const AboutText = () => {
- return <div>
+ return <div className={classes.container}>
     <span className={classes.title}>
       Hi, I am Georgios Katsanakis, a Front-End Developer and a Greek living in Sandnes,
       Norway.

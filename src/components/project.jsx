@@ -28,7 +28,7 @@ const Project = (props) => {
 
   return (
     <div className={classes.project}>
-      <div>
+      <div className={classes.project_info}>
         <span className={classes.project_title}>{project.name}</span>
         <span className={classes.project_year}>{project.year}</span>
         <p>{project.info}</p>
@@ -36,8 +36,12 @@ const Project = (props) => {
           {plus}
           {techs}
         </ul>
+        <div className={classes.project_btn_container}>
+          <Button text='Source Code' img='icons/github.svg' url={project.source} />
+          <Button text='Visit' img='icons/visit.svg' url={project.url} />
+        </div>
       </div>
-      <div>
+      <div className={classes.img_container}>
         {/* Thumb */}
         <Image
           alt={project.name}
@@ -46,15 +50,7 @@ const Project = (props) => {
           onClickHandler={modalHandler}
         />
       </div>
-      <div className={classes.project_btn_container}>
-        <Button text='Source Code' img='icons/github.svg' url={project.source} />
-        <Button text='Visit' img='icons/visit.svg' url={project.url} />
-      </div>
-      <Modal
-        isOpen={modalIsOpen}
-        src={project.img}
-        onClose={() => modalHandler()}
-      />
+      <Modal isOpen={modalIsOpen} src={project.img} onClose={() => modalHandler()} />
     </div>
   );
 };

@@ -11,6 +11,7 @@ import LayoutFourth from './components/layout-fourth';
 import PortfolioImage from './components/portfolio-image';
 import AboutText from './components/about-text';
 import Skills from './components/skills';
+import Contact from './components/contact';
 
 const App = () => {
   const projectsEls = projects.map((project) => {
@@ -36,23 +37,15 @@ const App = () => {
       </LayoutSecond>
       <LayoutThird>
         <Title title='About' />
-        <PortfolioImage />
-        <AboutText />
-        <Skills />
+        <div className='about-container'>
+          <PortfolioImage />
+          <AboutText />
+          <Skills />
+        </div>
       </LayoutThird>
       <LayoutFourth>
-        <a href='https://github.com/kronosGR' target='_blank' >
-          <img src='icons/github.svg' alt='github account' className='contact-img' />
-        </a>
-        <a
-          href='https://www.linkedin.com/in/kronosgr/'
-          target='_blank'
-          className='contact-img'>
-          <img src='icons/linkedin.svg' alt='linkedIn account' />
-        </a>
-        <a href='mailto:geo.eleo@gmail.com' target='_blank' className='contact-link'>
-          geo.elgeo@gmail.com
-        </a>
+        <Title title='Contact' />
+        <Contact />
       </LayoutFourth>
     </>
   );

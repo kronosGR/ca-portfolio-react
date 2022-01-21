@@ -36,24 +36,23 @@ html {
   font-size: 2.7rem;
 }
 
-.contact-img {
-  width: 150px;
-  transition: 1s;
-  margin: 10px;
+.about-container{
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-img:hover {
-  transform: rotateZ(359deg);
-  transition: 1s;
+@media screen and (min-width: 960px) {
+  .about-container{
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.contact-link {
-  text-decoration: none;
-  font-size: 1.9rem;
-  color: white;
-  transition: 1s;
-}
-
-.contact-link:hover {
-  transform: scale(1.2);
+@media screen and (min-width: 1300px) {
+  .about-container{
+    width: 80%;
+  }
 }
