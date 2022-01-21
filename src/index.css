@@ -35,3 +35,25 @@ html {
 .size3 {
   font-size: 2.7rem;
 }
+
+.contact-img {
+  width: 150px;
+  transition: 1s;
+  margin: 10px;
+}
+
+.contact-img:hover {
+  transform: rotateZ(359deg);
+  transition: 1s;
+}
+
+.contact-link {
+  text-decoration: none;
+  font-size: 1.9rem;
+  color: white;
+  transition: 1s;
+}
+
+.contact-link:hover {
+  transform: scale(1.2);
+}

@@ -41,11 +41,17 @@ const App = () => {
         <Skills />
       </LayoutThird>
       <LayoutFourth>
-        <a href='https://github.com/kronosGR' target='_blank'>
-          <img src='icons/github.svg' alt='github account' />
+        <a href='https://github.com/kronosGR' target='_blank' >
+          <img src='icons/github.svg' alt='github account' className='contact-img' />
         </a>
-        <a href='https://www.linkedin.com/in/kronosgr/' target='_blank'>
+        <a
+          href='https://www.linkedin.com/in/kronosgr/'
+          target='_blank'
+          className='contact-img'>
           <img src='icons/linkedin.svg' alt='linkedIn account' />
+        </a>
+        <a href='mailto:geo.eleo@gmail.com' target='_blank' className='contact-link'>
+          geo.elgeo@gmail.com
         </a>
       </LayoutFourth>
     </>
