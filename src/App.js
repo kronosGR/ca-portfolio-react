@@ -7,8 +7,10 @@ import { projects } from './data/projects';
 import Project from './components/project';
 import Button from './components/button';
 import LayoutThird from './components/layout-third';
+import LayoutFourth from './components/layout-fourth';
 import PortfolioImage from './components/portfolio-image';
 import AboutText from './components/about-text';
+import Skills from './components/skills';
 
 const App = () => {
   const projectsEls = projects.map((project) => {
@@ -22,8 +24,8 @@ const App = () => {
         <h2>... a Front-End Developer</h2>
         <h3>...with passion for problem solving and creation</h3>
       </LayoutFirst>
+      <Header />
       <LayoutSecond>
-        <Header />
         <Title title='Projects' />
         {projectsEls}
         <Button
@@ -36,7 +38,16 @@ const App = () => {
         <Title title='About' />
         <PortfolioImage />
         <AboutText />
+        <Skills />
       </LayoutThird>
+      <LayoutFourth>
+        <a href='https://github.com/kronosGR' target='_blank'>
+          <img src='icons/github.svg' alt='github account' />
+        </a>
+        <a href='https://www.linkedin.com/in/kronosgr/' target='_blank'>
+          <img src='icons/linkedin.svg' alt='linkedIn account' />
+        </a>
+      </LayoutFourth>
     </>
   );
 };

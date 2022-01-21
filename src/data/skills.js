@@ -13,10 +13,6 @@ export const skills = [
   },
   {
     name: 'XD',
-    size: 3,
-  },
-  {
-    name: 'Node.js',
     size: 2,
   },
   {
@@ -26,13 +22,29 @@ export const skills = [
   {
     name: 'SQL',
     size: 2,
+  },
+  {
+    name: 'Inkscape',
+    size: 2,
+  },
+  {
+    name: 'Node.js',
+    size: 1,
   },  
   {
     name: 'Next.js',
     size: 1,
   },
   {
-    name: 'C++',
+    name: 'Vue.js',
     size: 1,
   },
+  {
+    name: 'Php',
+    size: 1,
+  },
+  {
+    name: 'C++',
+    size: 1,
+  }
 ];
