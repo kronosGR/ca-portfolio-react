@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     name: 'Pet Paradise',
     year: 2021,
-    info: `An online store for pets.`,
+    info: `An online store for pets. First time launch wakes up Heroku, so it will take some time`,
     plus: `Responsive
     Back-end with Strapi
     Back-end host at Heroku

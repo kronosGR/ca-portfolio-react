@@ -19,7 +19,7 @@ body {
 html {
   min-width: 460px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
