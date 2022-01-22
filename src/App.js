@@ -12,6 +12,8 @@ import PortfolioImage from './components/portfolio-image';
 import AboutText from './components/about-text';
 import Skills from './components/skills';
 import Contact from './components/contact';
+import Fade from 'react-reveal/Fade';
+import Jello from 'react-reveal/Jello';
 
 const App = () => {
   const projectsEls = projects.map((project) => {
@@ -21,9 +23,15 @@ const App = () => {
   return (
     <>
       <LayoutFirst>
-        <h1>Hi, I am Georgios</h1>
-        <h2>... a Front-End Developer</h2>
-        <h3>...with passion for problem solving and creation</h3>
+        <Fade left>
+          <h1>Hi, I am Georgios</h1>
+        </Fade>
+        <Fade right>
+          <h2>... a Front-End Developer</h2>
+        </Fade>
+        <Fade bottom>
+          <h3>...with passion for problem solving and creation</h3>
+        </Fade>
       </LayoutFirst>
       <Header />
       <LayoutSecond>
@@ -38,7 +46,9 @@ const App = () => {
       <LayoutThird>
         <Title title='About' />
         <div className='about-container'>
-          <PortfolioImage />
+          <Jello>
+            <PortfolioImage />
+          </Jello>
           <AboutText />
           <Skills />
         </div>
