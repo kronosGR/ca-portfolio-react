@@ -9,6 +9,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -18,8 +19,6 @@ body {
 
 html {
   min-width: 460px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -36,13 +35,13 @@ html {
   font-size: 2.7rem;
 }
 
-.about-container{
+.about-container {
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 960px) {
-  .about-container{
+  .about-container {
     flex-direction: row;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -52,7 +51,7 @@ html {
 }
 
 @media screen and (min-width: 1300px) {
-  .about-container{
+  .about-container {
     width: 80%;
   }
 }
