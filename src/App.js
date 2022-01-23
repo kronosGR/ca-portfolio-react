@@ -14,6 +14,7 @@ import Skills from './components/skills';
 import Contact from './components/contact';
 import Fade from 'react-reveal/Fade';
 import Jello from 'react-reveal/Jello';
+import ErrorBoundary from './components/error-boundry';
 
 const App = () => {
   const projectsEls = projects.map((project) => {
@@ -21,7 +22,7 @@ const App = () => {
   });
 
   return (
-    <>
+    <ErrorBoundary>
       <LayoutFirst>
         <Fade left>
           <h1>Hi, I am Georgios</h1>
@@ -57,7 +58,7 @@ const App = () => {
         <Title title='Contact' />
         <Contact />
       </LayoutFourth>
-    </>
+    </ErrorBoundary>
   );
 };
 export default App;
