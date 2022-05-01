@@ -1,6 +1,30 @@
 export const projects = [
   {
     id: 1,
+    name: 'Holidaze',
+    year: 2022,
+    info: `A website with Bergen's accommodations`,
+    plus: `Responsive
+    Back-end with Strapi
+    Back-end host at home server
+    List/search/add products
+    Send messages/enquiries
+    Rating and Favorites
+    `,
+    techs_imgs: [
+      'icons/html.svg',
+      'icons/css.svg',
+      'icons/javascript.svg',
+      'icons/strapi.png',
+      'icons/nextjs.png',
+    ],
+    thumb: 'images/holidaze.png',
+    img: 'images/full-holidaze.png',
+    source: 'https://github.com/kronosGR/ca-portfolio-react',
+    url: 'https://next-js-holidaze.vercel.app/',
+  },
+  {
+    id: 2,
     name: 'Pet Paradise',
     year: 2021,
     info: `An online store for pets. First time launch wakes up Heroku, so it will take some time`,
@@ -22,7 +46,7 @@ export const projects = [
     url: 'http://petparadise.kronosgr.net/',
   },
   {
-    id: 2,
+    id: 3,
     name: 'JS World',
     year: 2021,
     info: `A JavaScript blog with tutorials. Uses headless CMS and API.`,
@@ -43,7 +67,7 @@ export const projects = [
     url: 'https://jsw.kronosgr.net/',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Game Hub',
     year: 2021,
     info: `Online store. Headless CMS, API and Local Storage.`,
@@ -64,7 +88,7 @@ export const projects = [
     url: 'https://gamehub.kronosgr.net/',
   },
   {
-    id: 4,
+    id: 5,
     name: 'CSM',
     year: 2020,
     info: `Science Museum website.`,
