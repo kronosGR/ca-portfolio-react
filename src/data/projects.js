@@ -20,7 +20,7 @@ export const projects = [
     ],
     thumb: 'images/holidaze.png',
     img: 'images/full-holidaze.png',
-    source: 'https://github.com/kronosGR/ca-portfolio-react',
+    source: 'https://github.com/kronosGR/Next.js-Holidaze.git',
     url: 'https://next-js-holidaze.vercel.app/',
   },
   {
